@@ -1,0 +1,6 @@
+temperature,humidity,rainfall,soil_moisture,crop_stage,area,water_quantity,rainfall_trend,temperature_trend,soil_dryness,irrigation_required,risk
+35,60,0,20,2,1.2,4500,-1,1,0.8,1,High
+30,70,5,40,1,1.0,2500,0,0,0.4,0,Low
+38,55,0,18,3,1.5,5200,-1,1,0.9,1,High
+28,80,10,60,1,0.8,2000,1,-1,0.3,0,Low
+33,65,2,30,2,1.1,3800,0,0,0.6,1,Medium

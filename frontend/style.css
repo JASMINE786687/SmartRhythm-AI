@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0B1F2A, #112E3C);
+  color: #EAF4F4;
+  min-height: 100vh;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  color: #2EC4B6;
+  text-shadow: 0 0 20px rgba(46,196,182,0.4);
+}
+
+.hero p {
+  margin-top: 20px;
+  max-width: 650px;
+  color: #A9C3CC;
+  font-size: 1.1rem;
+}
+
+.hero-buttons {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #2EC4B6;
+  color: #0B1F2A;
+  border: none;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 25px rgba(46,196,182,0.7);
+}
+
+.btn-secondary {
+  border: 2px solid #2EC4B6;
+  color: #2EC4B6;
+}
+
+.btn-secondary:hover {
+  background: #2EC4B6;
+  color: #0B1F2A;
+}
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  font-size: 0.85rem;
+  color: #A9C3CC;
+}
+
+/* DASHBOARD */
+
+.top-bar {
+  padding: 20px;
+  background: rgba(0,0,0,0.3);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.dashboard {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: rgba(17,46,60,0.85);
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+.card h3 {
+  color: #2EC4B6;
+  margin-bottom: 15px;
+}
+
+.card label {
+  display: block;
+  margin-top: 10px;
+  color: #A9C3CC;
+}
+
+.card select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  background: #0B1F2A;
+  border: none;
+  color: #EAF4F4;
+  border-radius: 8px;
+}
+
+.big-text {
+  font-size: 1.4rem;
+}
+
+.yes {
+  color: #2EC4B6;
+}
+
+.no {
+  color: #E63946;
+}
+
+.risk-high {
+  color: #E63946;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.risk-low {
+  color: #2EC4B6;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.glow {
+  box-shadow: 0 0 25px rgba(46,196,182,0.25);
+}
+.meter {
+  width: 100%;
+  height: 15px;
+  background: #1a3a4a;
+  border-radius: 10px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+#confidenceBar {
+  height: 100%;
+  width: 0%;
+  background: #2EC4B6;
+  transition: width 1s ease-in-out;
+}

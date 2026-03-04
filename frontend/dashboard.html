@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SmartRhythm-AI Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="top-bar">
+  <h2>🌾 SmartRhythm-AI Dashboard</h2>
+</header>
+
+<section class="dashboard">
+
+  <!-- Farmer Input -->
+  <div class="card">
+    <h3>Farmer Input</h3>
+
+    <label>Village</label>
+    <select id="village">
+      <option>Ambasamudram</option>
+      <option>Kallidaikurichi</option>
+      <option>Cheranmahadevi</option>
+      <option>Veeravanallur</option>
+      <option>Pathamadai</option>
+    </select>
+
+    <label>Crop</label>
+    <select id="crop">
+      <option>Paddy</option>
+      <option>Groundnut</option>
+      <option>Maize</option>
+    </select>
+
+    <button id="analyzeBtn" class="btn-primary">
+      Analyze Water Need
+    </button>
+    <button id="analyzeBtn2" class="btn-primary">
+       Analyze Water Need
+    </button>
+
+    <button id="apiBtn" class="btn-secondary">
+  Fetch Live Weather Data
+</button>
+  </div>
+
+  <!-- AI Result -->
+  <div class="card glow">
+    <h3>AI Recommendation</h3>
+    <p class="big-text">
+      Irrigation Required: 
+      <span id="irrigationResult" class="yes">--</span>
+    </p>
+    <p>Confidence: <strong id="confidence">--</strong></p>
+  </div>
+
+  <!-- Risk -->
+  <div class="card risk">
+    <h3>Drought Risk</h3>
+    <p id="riskLevel" class="risk-high">--</p>
+  </div>
+
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
